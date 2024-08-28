@@ -2412,6 +2412,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@mantinex/mantine-logo@npm:^1.0.1":
+  version: 1.0.1
+  resolution: "@mantinex/mantine-logo@npm:1.0.1"
+  peerDependencies:
+    "@mantine/core": ">=7.0.0"
+    "@mantine/hooks": ">=7.0.0"
+    react: ^18.2.0
+    react-dom: ^18.2.0
+  checksum: 10c0/d1628195eaf6681c4366c0154ee2e3adf1b863432ab15e6285a3f33ffbb33a17ec0b5a90a9ced2429cbf2841d4de11f72320ca3d37578d6908a5b9f194fea2d3
+  languageName: node
+  linkType: hard
+
 "@mdx-js/react@npm:^3.0.0":
   version: 3.0.1
   resolution: "@mdx-js/react@npm:3.0.1"
@@ -3212,7 +3224,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tabler/icons-react@npm:^3.6.0":
+"@tabler/icons-react@npm:^3.14.0":
   version: 3.14.0
   resolution: "@tabler/icons-react@npm:3.14.0"
   dependencies:
@@ -5271,6 +5283,65 @@ __metadata:
   checksum: 10c0/7aedf037541c93744148f599daea93d46d1f93ab4347997189efa2d1f003af8eadd7e1e05347ef09261ac1dc635ce375b8c6c00796245fffb4120a124824a14f
   languageName: node
   linkType: hard
+
+"carousel-app@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "carousel-app@workspace:."
+  dependencies:
+    "@babel/core": "npm:^7.24.7"
+    "@mantine/carousel": "npm:^7.12.1"
+    "@mantine/core": "npm:7.12.1"
+    "@mantine/hooks": "npm:7.12.1"
+    "@mantinex/mantine-logo": "npm:^1.0.1"
+    "@next/bundle-analyzer": "npm:^14.2.4"
+    "@next/eslint-plugin-next": "npm:^14.2.4"
+    "@storybook/addon-essentials": "npm:^8.1.10"
+    "@storybook/addon-styling-webpack": "npm:^1.0.0"
+    "@storybook/blocks": "npm:^8.1.10"
+    "@storybook/nextjs": "npm:^8.1.10"
+    "@storybook/react": "npm:^8.1.10"
+    "@tabler/icons-react": "npm:^3.14.0"
+    "@testing-library/dom": "npm:^10.1.0"
+    "@testing-library/jest-dom": "npm:^6.4.6"
+    "@testing-library/react": "npm:^16.0.0"
+    "@testing-library/user-event": "npm:^14.5.2"
+    "@types/jest": "npm:^29.5.12"
+    "@types/node": "npm:^20.14.8"
+    "@types/react": "npm:18.3.3"
+    "@typescript-eslint/eslint-plugin": "npm:^7.13.1"
+    "@typescript-eslint/parser": "npm:^7.13.1"
+    autoprefixer: "npm:^10.4.20"
+    babel-loader: "npm:^9.1.3"
+    embla-carousel-react: "npm:^7.1.0"
+    eslint: "npm:^8.57.0"
+    eslint-config-airbnb: "npm:19.0.4"
+    eslint-config-airbnb-typescript: "npm:^18.0.0"
+    eslint-config-mantine: "npm:3.2.0"
+    eslint-plugin-import: "npm:^2.29.1"
+    eslint-plugin-jest: "npm:^28.6.0"
+    eslint-plugin-jsx-a11y: "npm:^6.9.0"
+    eslint-plugin-react: "npm:^7.34.3"
+    eslint-plugin-react-hooks: "npm:^4.6.2"
+    eslint-plugin-testing-library: "npm:^6.2.2"
+    jest: "npm:^29.7.0"
+    jest-environment-jsdom: "npm:^29.7.0"
+    next: "npm:14.2.4"
+    postcss: "npm:^8.4.41"
+    postcss-preset-mantine: "npm:1.17.0"
+    postcss-simple-vars: "npm:^7.0.1"
+    prettier: "npm:^3.3.2"
+    react: "npm:18.3.1"
+    react-dom: "npm:18.3.1"
+    storybook: "npm:^8.1.10"
+    storybook-dark-mode: "npm:^4.0.2"
+    stylelint: "npm:^16.6.1"
+    stylelint-config-standard-scss: "npm:^13.1.0"
+    swr: "npm:^2.2.5"
+    tailwindcss: "npm:^3.4.10"
+    ts-jest: "npm:^29.1.5"
+    typescript: "npm:5.5.2"
+  languageName: unknown
+  linkType: soft
 
 "case-sensitive-paths-webpack-plugin@npm:^2.4.0":
   version: 2.4.0
@@ -10005,64 +10076,6 @@ __metadata:
   checksum: 10c0/b0e6e599780ce6bab49cc413eba822f7d1f0dfebd1c103eaa3785c59e43e22c59018323cf9e1708f0ef5329e94a745d163fcbb6bff8e4c6742f9be9e86f3500c
   languageName: node
   linkType: hard
-
-"mantine-next-template@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "mantine-next-template@workspace:."
-  dependencies:
-    "@babel/core": "npm:^7.24.7"
-    "@mantine/carousel": "npm:^7.12.1"
-    "@mantine/core": "npm:7.12.1"
-    "@mantine/hooks": "npm:7.12.1"
-    "@next/bundle-analyzer": "npm:^14.2.4"
-    "@next/eslint-plugin-next": "npm:^14.2.4"
-    "@storybook/addon-essentials": "npm:^8.1.10"
-    "@storybook/addon-styling-webpack": "npm:^1.0.0"
-    "@storybook/blocks": "npm:^8.1.10"
-    "@storybook/nextjs": "npm:^8.1.10"
-    "@storybook/react": "npm:^8.1.10"
-    "@tabler/icons-react": "npm:^3.6.0"
-    "@testing-library/dom": "npm:^10.1.0"
-    "@testing-library/jest-dom": "npm:^6.4.6"
-    "@testing-library/react": "npm:^16.0.0"
-    "@testing-library/user-event": "npm:^14.5.2"
-    "@types/jest": "npm:^29.5.12"
-    "@types/node": "npm:^20.14.8"
-    "@types/react": "npm:18.3.3"
-    "@typescript-eslint/eslint-plugin": "npm:^7.13.1"
-    "@typescript-eslint/parser": "npm:^7.13.1"
-    autoprefixer: "npm:^10.4.20"
-    babel-loader: "npm:^9.1.3"
-    embla-carousel-react: "npm:^7.1.0"
-    eslint: "npm:^8.57.0"
-    eslint-config-airbnb: "npm:19.0.4"
-    eslint-config-airbnb-typescript: "npm:^18.0.0"
-    eslint-config-mantine: "npm:3.2.0"
-    eslint-plugin-import: "npm:^2.29.1"
-    eslint-plugin-jest: "npm:^28.6.0"
-    eslint-plugin-jsx-a11y: "npm:^6.9.0"
-    eslint-plugin-react: "npm:^7.34.3"
-    eslint-plugin-react-hooks: "npm:^4.6.2"
-    eslint-plugin-testing-library: "npm:^6.2.2"
-    jest: "npm:^29.7.0"
-    jest-environment-jsdom: "npm:^29.7.0"
-    next: "npm:14.2.4"
-    postcss: "npm:^8.4.41"
-    postcss-preset-mantine: "npm:1.17.0"
-    postcss-simple-vars: "npm:^7.0.1"
-    prettier: "npm:^3.3.2"
-    react: "npm:18.3.1"
-    react-dom: "npm:18.3.1"
-    storybook: "npm:^8.1.10"
-    storybook-dark-mode: "npm:^4.0.2"
-    stylelint: "npm:^16.6.1"
-    stylelint-config-standard-scss: "npm:^13.1.0"
-    swr: "npm:^2.2.5"
-    tailwindcss: "npm:^3.4.10"
-    ts-jest: "npm:^29.1.5"
-    typescript: "npm:5.5.2"
-  languageName: unknown
-  linkType: soft
 
 "map-or-similar@npm:^1.5.0":
   version: 1.5.0

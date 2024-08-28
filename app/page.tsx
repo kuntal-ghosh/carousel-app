@@ -1,46 +1,44 @@
-import { useMediaQuery } from '@mantine/hooks';
 import Head from 'next/head';
-// import { use, useEffect, useState } from 'react';
-import useSWR from 'swr';
-import Demo from '../components/Carousel/Carousel';
+import CarouselWrapper from '../components/Carousel/Carousel';
+import { CarouselProvider } from '@/contexts/CarouselContext';
 
-interface CarouselItem {
-  id: string;
-  imageUrl: string;
-  title: string;
-  description: string;
-}
 
-const fetcher = async (url: string) => {
-  const res = await fetch(url);
-  return res.json();
-};
+ const HomePage = async () =>{
 
-export default function HomePage() {
-  // const [items, setItems] = useState<CarouselItem[]>([]);
-  // const isMobile = useMediaQuery('(max-width: 768px)');
+  /* TODO: Need to remove this fetch call and use the context instead
 
-  // const { data, error } = useSWR<CarouselItem[]>('/api/carousel', fetcher);
+  const data = await fetch('http://localhost:3000/api/carousel');
+  const jsonData = await data.json();
+  -------------------------------------------------------------------------------------------------------
 
-  // useEffect(() => {
-  //   if (data) {
-  //     setItems(data);
-  //   }
-  // }, [data]);
+  _Note: We could have use both the server side rendering and the client side rendering togather but for the sake of requieremnt of the project,
+  we are using only client side rendering. We could have pass the initialData to the useSWR hook as a fallbackData but we are not doing that here.
 
-  // if (error) return <div>Failed to load</div>;
-  // if (!data) return <div>Loading...</div>;
+  -------------------------------------------------------------------------------------------------------
+    const { data, error } = useSWR<CarouselItem[]>('/api/carousel', fetcher, {
+    fallbackData: initialData, 
+    revalidateOnFocus: true
+  });
+
+    */
+
   return (
     <div>
     <Head>
+      {/* TODO: Need to get static text from constant file */}
       <title>Carousel Example</title>
       <meta name="description" content="A simple carousel example using Next.js, TypeScript, Tailwind CSS, and Mantine." />
     </Head>
     <main className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
+      {/* TODO: Need to get static text from constant file */}
       <h1 className="text-3xl font-bold mb-4">Welcome to the Carousel Example</h1>
-      <Demo />
+      <CarouselProvider>
+      <CarouselWrapper />
+    </CarouselProvider>
     </main>
     </div>
 
   );
 }
+
+export default HomePage;

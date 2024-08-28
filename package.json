@@ -1,5 +1,5 @@
 {
-  "name": "mantine-next-template",
+  "name": "carousel-app",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -22,8 +22,9 @@
     "@mantine/carousel": "^7.12.1",
     "@mantine/core": "7.12.1",
     "@mantine/hooks": "7.12.1",
+    "@mantinex/mantine-logo": "^1.0.1",
     "@next/bundle-analyzer": "^14.2.4",
-    "@tabler/icons-react": "^3.6.0",
+    "@tabler/icons-react": "^3.14.0",
     "embla-carousel-react": "^7.1.0",
     "next": "14.2.4",
     "react": "18.3.1",
